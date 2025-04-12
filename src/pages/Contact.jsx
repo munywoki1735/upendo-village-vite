@@ -3,7 +3,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 import { FaMapMarkerAlt, FaPhoneAlt, FaEnvelope } from 'react-icons/fa';
 import { useState } from 'react';
 
-const SITE_KEY = '6LddDxUrAAAAALsPvN9G4I8AcNJHwPFSEsvLrYt-';
+const SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
 const Contact = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
